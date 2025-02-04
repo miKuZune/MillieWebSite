@@ -192,14 +192,48 @@
             </div>
          </div>
         <!-- Footer end -->
+
          <!-- Mobile menu script -->
-        <script>
+         <script>
             var navbar = document.getElementById("myLinks");
             var hamburgerButton = document.getElementById("hamburger-button");
             var closeButton = document.getElementById("close-button");
+            var backToTopButton = document.getElementById("backToTop");
 
             hamburgerButton.onclick = hamburgerBarOnClick;
             closeButton.onclick = closeButtonOnClick;
+            if(backToTopButton != null)
+            {
+                backToTopButton.onclick = backToTopClick;
+            }
+            
+
+            function update(){
+                updateScrollToTop();
+
+                setTimeout(() => {
+                    update();
+                }, 100);
+            }
+
+            update();
+
+            function updateScrollToTop()
+            {
+                if(backToTopButton == null) return;
+                
+                var currScroll = document.body.scrollTop;
+                var result = currScroll > 1;
+                if(currScroll > 1)
+                {
+                    //backToTopButton.style.backgroundColor = "rgba(245, 241, 228, 0.5)";
+                    backToTopButton.style.opacity = "1";
+                }
+                else{
+                    //backToTopButton.style.backgroundColor = "rgba(245, 241, 228, 0)";
+                    backToTopButton.style.opacity = "0";
+                }
+            }
 
             function hamburgerBarOnClick(){
                 navbar.style.display = "block";
@@ -207,6 +241,10 @@
 
             function closeButtonOnClick(){
                 navbar.style.display = "none";
+            }
+
+            function backToTopClick(){
+                document.body.scrollTop = document.documentElement.scrollTop = 0;
             }
         </script>
 
