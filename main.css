@@ -62,6 +62,15 @@ h1{
     filter: invert(6%) sepia(47%) saturate(3748%) hue-rotate(315deg) brightness(116%) contrast(118%);
 }
 
+.filter-gold{
+    filter: invert(44%) sepia(69%) saturate(321%) hue-rotate(9deg) brightness(90%) contrast(83%);
+}
+
+.header object{
+    height: calc(100% - 8px);
+    padding:4px 12px;
+    display: block;
+}
 
 
 .footer .section .inner-section.logo object{
@@ -129,6 +138,18 @@ h1{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.container .block.text-container:hover{
+    color: #85753e;
+}
+
+.container .block.img-container:hover{
+    filter: invert(44%) sepia(69%) saturate(321%) hue-rotate(9deg) brightness(90%) contrast(83%);;
+}
+
+.container .block.img-container, .container .block.text-container{
+    transition: 0.3s;
 }
 
 .container .logo-text-container .logo-text-inner-container p{
@@ -310,11 +331,25 @@ h1{
     z-index: 100;
 
 }
+.insta_logo, .linkedin_logo{
+    width: fit-content;
+}
+
+.insta_logo, .linkedin_logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section.follow a{
+    display: flex;
+}
 
 .button-container
 {
     border-style: solid;
-    border-color: #8a4641;
+    border-color: #3c0a12;
     border-width: 1px;
     transition: 0.3s;
     width: 300px;
@@ -543,6 +578,23 @@ h1{
     font-size: 12px;
 }
 
+.footer .section.follow .link{
+    transition: 0.3s;
+}
+
+.footer .section.follow .link svg{
+    transition: 0.3s;
+}
+
+.footer .section.follow .link:hover{
+    color:#85753e;
+}
+
+.footer .section.follow .link:hover svg{
+    
+    filter: invert(44%) sepia(69%) saturate(321%) hue-rotate(9deg) brightness(90%) contrast(83%);
+}
+
 .full-img-container{
     display: flex;
     align-items: center;
@@ -649,7 +701,6 @@ h1{
     position:absolute;
     bottom:0;
     left:0;
-    min-height: 250px;
 }
 
 .banner-image img{
@@ -659,7 +710,7 @@ h1{
 }
 
 .banner-image-inner{
-    height: 250px;
+    height: 25vh;
 }
 
 .slide .text-container{
@@ -1839,12 +1890,9 @@ h1{
         width: 100%;
     }
     .logo-outer-container{
-        width: 200px;
         height: 100%;
         margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
     }
     .header{
         height: 128px;
@@ -1956,8 +2004,8 @@ h1{
         padding:0;
     }
 
-    .header-container{
-        margin-bottom:32px;
+    .header-container, .page .page-inner .page-text-block .page-text-block-inner .text p{
+        margin: 4px 0;
     }
 
     .page .page-inner .page-text-block .page-text-block-inner .text{
@@ -2485,6 +2533,18 @@ h1{
         width: calc(100% - 32px);
         padding:0 16px;
     }
+    .footer .section .inner-section.contact h3{
+        font-size: 20px;
+    }
+    .footer .section .inner-section.contact p{
+        font-size: 16px;
+    }
+    .footer .section.follow .line h3{
+        font-size: 20px;
+    }
+    .footer .section.follow .line p{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width:600px){
@@ -2497,7 +2557,7 @@ h1{
 @media only screen and (max-width:500px){
     .header-container h1, .page .about-page .about-box h1, .portfolio-landing-section .header-container h1, 
     .page .page-inner .page-text-block h1, .slide .title-container h1, .title-section h1, .header-container h1{
-        font-size: 50px;
+        font-size: 55px;
     }
 }
 
@@ -2584,7 +2644,7 @@ h1{
 @media only screen and (max-width:400px){
     .header-container h1, .page .about-page .about-box h1, .portfolio-landing-section .header-container h1, 
     .page .page-inner .page-text-block h1, .slide .title-container h1, .title-section h1{
-        font-size: 40px;
+        font-size: 45px;
     }
 }
 
@@ -2618,7 +2678,7 @@ h1{
 @media only screen and (max-width:350px){
     .header-container h1, .page .about-page .about-box h1, .portfolio-landing-section .header-container h1, 
     .page .page-inner .page-text-block h1, .slide .title-container h1, .title-section h1{
-        font-size: 35px;
+        font-size: 40px;
     }
 }
 

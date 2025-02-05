@@ -2,5 +2,5 @@
 - Add functionality to back to top button x 
 - ensure back to top button does not overlap footer content
 - make hamburger menu disappear when opening the menu x
-- Make all titles uniform
+- Make all titles uniform x
 - Add extra gap to the reactive grids in portfolio and ensure proper squarage
