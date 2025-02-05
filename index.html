@@ -12,14 +12,9 @@
         <div class="header">
             <div class="header-mobile">
                 <div class="logo-outer-container">
-                    <div class="block logo-container">
-                        <img class="logo" src="imgs/logo red.png" />
-                    </div>
-                    <div class="block logo-text-container">
-                        <div class="logo-text-inner-container">
-                            <p class="">Amelia Farley Design</p>
-                        </div>
-                    </div>
+                    <object class="filter-red" data="imgs/LOGO.svg" type="image/svg+xml">
+                        <img src="imgs/LOGO.svg" />
+                    </object>
                 </div>
                 <div class="hamburg-menu-container">
                     <div class="hamburg-menu-container-inner" id="hamburger-button">
@@ -57,16 +52,9 @@
                 </a>
             </div>
             <div class="container left">
-                <div class="block logo-container">
-                    <img class="logo" src="imgs/logo red.png" />
-                </div>
-                <div class="block logo-text-container">
-                    <div class="logo-text-inner-container">
-                        <p class="">Amelia Farley Design</p>
-                    </div>
-                </div>
-                
-                
+                <object class="filter-red" data="imgs/LOGO.svg" type="image/svg+xml">
+                    <img src="imgs/LOGO.svg" />
+                </object>
             </div>
             <div class="container right">
                 <div class="block text-container">
@@ -286,12 +274,9 @@
             <div class="section logo">
                 <!-- Logo -->
                 <div class="inner-section logo">
-                    <div class="image">
-                        <img src="imgs/logo cream.png" />
-                    </div>
-                    <div class="text">
-                        <h2>AMELIA FARLEY DESIGN</h2>
-                    </div>
+                    <object class="filter-cream" data="imgs/LOGO.svg" type="image/svg+xml">
+                        <img src="imgs/LOGO.svg" />
+                    </object>
                 </div>
             </div>
             <div class="section follow">
@@ -371,10 +356,12 @@
 
             function hamburgerBarOnClick(){
                 navbar.style.display = "block";
+                hamburgerButton.style.display = "none";
             }
 
             function closeButtonOnClick(){
                 navbar.style.display = "none";
+                hamburgerButton.style.display = "block";
             }
 
             function backToTopClick(){

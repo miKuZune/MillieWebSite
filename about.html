@@ -214,12 +214,9 @@
             <div class="section logo">
                 <!-- Logo -->
                 <div class="inner-section logo">
-                    <div class="image">
-                        <img src="imgs/logo cream.png" />
-                    </div>
-                    <div class="text">
-                        <h2>AMELIA FARLEY DESIGN</h2>
-                    </div>
+                    <object class="filter-cream" data="imgs/LOGO.svg" type="image/svg+xml">
+                        <img src="imgs/LOGO.svg" />
+                    </object>
                 </div>
             </div>
             <div class="section follow">
@@ -300,10 +297,12 @@
 
             function hamburgerBarOnClick(){
                 navbar.style.display = "block";
+                hamburgerButton.style.display = "none";
             }
 
             function closeButtonOnClick(){
                 navbar.style.display = "none";
+                hamburgerButton.style.display = "block";
             }
 
             function backToTopClick(){
