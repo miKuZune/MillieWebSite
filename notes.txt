@@ -4,3 +4,24 @@
 - make hamburger menu disappear when opening the menu x
 - Make all titles uniform x
 - Add extra gap to the reactive grids in portfolio and ensure proper squarage
+
+
+700 - 1100 ensure footer right box does not spread out so much
+
+
+About page:
+- try to ensure bottom banner on landing slide does not overlap text x
+
+
+
+Portfolio
+- Update landing page when recieve new design
+- Where poison lies , make row of 4 into squares x
+- Add references (needs millie)
+- Timeless entanglement row of 4 needs to be squares x
+
+
+Contact page
+- Updating links x
+- On email one add a mailto x
+- on hover over of links make gold x
