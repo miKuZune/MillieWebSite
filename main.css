@@ -2377,18 +2377,23 @@ h1{
 
     .grid-small-row-projects{
         grid-row: span 6;
+        min-height: 290px;
     }
     .grid-small-row-poison{
         grid-row: span 7;
+        min-height: 340px;
     }
     .grid-small-row-habitat{
         grid-row: span 6;
+        min-height: 300px;
     }
     .grid-small-row-timeless{
         grid-row: span 7;
+        min-height: 350px;
     }
     .grid-small-row-lookbook{
         grid-row: span 6;
+        min-height: 250px;
     }
 
     .portfolio-section-inner .img-container.horizontal-padding{
@@ -2518,6 +2523,18 @@ h1{
     .portfolio-landing-text-inner{
         display: block;
         height: fit-content;
+    }
+    .portfolio-section-inner .mobile-only.text-section.horizontal-padding{
+        padding:32px;
+        padding-bottom: 0;
+        height: fit-content;
+        min-height: unset;
+    }
+    .portfolio-section-inner .mobile-only.text-section p{
+        margin:0;
+    }
+    .portfolio-section-inner .mobile-only.text-section h1{
+        margin-bottom: 32px;
     }
 }
 
