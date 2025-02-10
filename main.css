@@ -2904,7 +2904,7 @@ h1{
         height: 80px;
     }
     .grid-small-row-projects{
-        grid-row: span 13;
+        grid-row: span 14;
     }
     .grid-small-row-poison{
         grid-row: span 16;
