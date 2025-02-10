@@ -2159,6 +2159,7 @@ h1{
 
     .page .about-page .about-box.right, .page .about-page .about-box.left{
         width: 100%;
+        margin-bottom: 48px;
     }
 
     .page .split-page .split.right.image,.page .split-page .split.left.image{
