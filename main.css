@@ -2536,6 +2536,9 @@ h1{
     .portfolio-section-inner .mobile-only.text-section h1{
         margin-bottom: 32px;
     }
+    .portfolio-landing-section .text-container p{
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 700px){
