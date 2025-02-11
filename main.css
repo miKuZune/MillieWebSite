@@ -2400,8 +2400,10 @@ h1{
         padding:0;
     }
     .link-grid{
-        --size:40vw;
-        --height:40vw;
+        --size:256px;
+        --height:200px;
+        width: 100%;
+        max-height: 300px;
     }
     .link-container-inner{
         display: grid;
@@ -2411,7 +2413,7 @@ h1{
         align-items: center;
         justify-content: center;
         width: 80%;
-        margin:0 10%;
+        margin:0 auto;
     }
     .title-section{
         width:80%;
@@ -2760,7 +2762,9 @@ h1{
     .grid-mid-row-6{
         grid-row: span 4;
     }
-    
+    .link-grid{
+        max-height: 220px;
+    }
 }
 
 @media only screen and (max-width:550px){
@@ -2812,6 +2816,10 @@ h1{
     }
     .grid-mid-row-6{
         grid-row: span 3;
+    }
+
+    .link-grid{
+        max-height: 170px;
     }
 }
 
@@ -2901,6 +2909,9 @@ h1{
     .page .about-page .about-box{
         min-height: 600px;
     }
+    .link-grid{
+        max-height: 150px;
+    }
 }
 
 @media only screen and (max-width:400px){
@@ -2916,6 +2927,9 @@ h1{
     }
     .header-container h1{
         font-size: 40px;
+    }
+    .link-grid{
+        max-height: 140px;
     }
 }
 
@@ -2947,6 +2961,9 @@ h1{
     .grid-mid-row-6{
         grid-row: span 4;
     }
+    .link-grid{
+        max-height: 130px;
+    }
 }
 
 @media only screen and (max-width:350px){
@@ -2959,6 +2976,9 @@ h1{
     }
     .footer .section .inner-section.contact p, .footer .section.follow .line p{
         font-size: 14px;
+    }
+    .link-grid{
+        max-height: 120px;
     }
 }
 
@@ -2980,5 +3000,8 @@ h1{
     }
     .grid-mid-row-6{
         grid-row: span 4;
+    }
+    .link-grid{
+        max-height: 115px;
     }
 }
